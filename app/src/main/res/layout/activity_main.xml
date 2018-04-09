@@ -7,7 +7,8 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:src="@drawable/voluntree"
+        android:src="@drawable/volunteerpower"
+
         android:id="@+id/volunteer"
         />
 </RelativeLayout>

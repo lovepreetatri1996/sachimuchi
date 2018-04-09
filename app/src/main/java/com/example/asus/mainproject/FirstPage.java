@@ -21,4 +21,12 @@ public class FirstPage extends AppCompatActivity {
         Intent i =new Intent(FirstPage.this,Feedback.class);
         startActivity(i);
     }
+
+
+
+    public void jaja(View view) {
+        Intent i=new Intent(FirstPage.this,Homes.class);
+        startActivity(i);
+
+    }
 }

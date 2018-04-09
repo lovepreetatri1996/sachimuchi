@@ -14,6 +14,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         ImageView volun = findViewById(R.id.volunteer);
         Animation alpha = AnimationUtils.loadAnimation(MainActivity.this, R.anim.fadein);
         volun.setAnimation(alpha);
@@ -24,6 +25,8 @@ public class MainActivity extends AppCompatActivity {
             public void run() {
                 Intent i = new Intent(MainActivity.this,FirstPage.class);
                 startActivity(i);
+
+                finish();
 
             }
         };

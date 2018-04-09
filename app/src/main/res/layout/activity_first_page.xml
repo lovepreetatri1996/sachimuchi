@@ -10,7 +10,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="60dp"
-        android:text="Voluntree Management"
+        android:text="Volunteer Management"
         android:textColor="#759bae"
         android:textSize="30dp"
         android:textStyle="bold"
@@ -40,18 +40,17 @@
         android:maxLines="1"
         android:textSize="20dp" />
 
-    <EditText
+    <Button
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:layout_marginTop="30dp"
         android:background="@drawable/rounded"
         android:backgroundTint="#759bae"
-
         android:gravity="center"
         android:maxLines="1"
-
         android:text="Login"
-        android:textColor="#fff" />
+        android:textColor="#fff"
+       />
 
     <TextView
         android:layout_width="wrap_content"
@@ -60,7 +59,8 @@
         android:layout_marginTop="20dp"
         android:text="Forget Password?"
         android:textColor="#759bae"
-        android:textSize="18dp" />
+        android:textSize="18dp"
+        android:onClick="jaja"/>
 
     <TextView
         android:layout_width="wrap_content"
