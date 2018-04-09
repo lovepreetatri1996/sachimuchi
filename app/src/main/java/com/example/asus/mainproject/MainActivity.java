@@ -8,6 +8,8 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 
+import com.google.firebase.auth.FirebaseAuth;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -23,10 +25,25 @@ public class MainActivity extends AppCompatActivity {
         Runnable r = new Runnable() {
             @Override
             public void run() {
-                Intent i = new Intent(MainActivity.this,FirstPage.class);
-                startActivity(i);
 
-                finish();
+                FirebaseAuth auth = FirebaseAuth.getInstance();
+
+                if(auth.getCurrentUser() == null)
+                {
+                    Intent i = new Intent(MainActivity.this,FirstPage.class);
+                    startActivity(i);
+
+                    finish();
+                }
+
+                else {
+                    Intent i = new Intent(MainActivity.this,Homes.class);
+                    startActivity(i);
+
+                    finish();
+                }
+
+
 
             }
         };

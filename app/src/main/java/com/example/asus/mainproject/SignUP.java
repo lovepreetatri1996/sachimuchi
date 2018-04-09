@@ -126,7 +126,7 @@ public  class SignUP extends AppCompatActivity {
             return;
         }
 
-        if(Patterns.EMAIL_ADDRESS.matcher(e).matches() )
+        if(!Patterns.EMAIL_ADDRESS.matcher(e).matches() )
         {
             Toast.makeText(SignUP.this , "please enter email" , Toast.LENGTH_SHORT).show();
             return;

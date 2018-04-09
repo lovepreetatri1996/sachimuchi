@@ -14,15 +14,11 @@
         android:id="@+id/add"
         android:title="ADD"
         />
+
     <item
-        android:id="@+id/location"
-        android:icon="@drawable/ic_location"
-        android:title="LOCATION"
-        />
-    <item
-        android:id="@+id/account"
+        android:id="@+id/more"
         android:icon="@drawable/ic_account"
-        android:title="ACCOUNT"
+        android:title="More"
         />
 
 </menu>
