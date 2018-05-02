@@ -4,11 +4,279 @@
     android:layout_height="match_parent"
     tools:context="com.example.asus.mainproject.fragments.More">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="SIgn out"
-        android:id="@+id/sign_out"/>
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:layout_marginTop="10dp"
+       android:background="@drawable/rounded"
+       android:orientation="vertical">
+
+
+
+
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="40dp"
+
+           android:orientation="horizontal"
+           android:layout_marginTop="20dp"
+           android:id="@+id/edit_profile_layout"
+
+
+           >
+
+           <ImageView
+               android:layout_width="wrap_content"
+               android:layout_height="30dp"
+               android:layout_gravity="center"
+               android:layout_marginLeft="10dp"
+               android:src="@drawable/ic_editprofile"
+
+
+               />
+
+           <TextView
+
+               android:layout_width="match_parent"
+               android:layout_height="40dp"
+               android:text="Edit Profile"
+               android:layout_marginLeft="10dp"
+               android:textSize="30dp" />
+       </LinearLayout>
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="40dp"
+           android:orientation="horizontal"
+           android:layout_marginTop="20dp"
+
+
+
+           >
+
+           <ImageView
+               android:layout_width="wrap_content"
+               android:layout_height="30dp"
+               android:layout_gravity="center"
+               android:layout_marginLeft="10dp"
+               android:src="@drawable/ic_edit_event_info"
+
+
+               />
+
+           <TextView
+
+               android:layout_width="match_parent"
+               android:layout_height="40dp"
+               android:layout_weight="1"
+               android:text="Edit Event Info"
+               android:id="@+id/edit_event_info"
+               android:layout_marginLeft="10dp"
+               android:textSize="30dp"
+               />
+       </LinearLayout>
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="40dp"
+           android:orientation="horizontal"
+           android:layout_marginTop="20dp"
+
+
+
+           >
+
+           <ImageView
+               android:layout_width="wrap_content"
+               android:layout_height="30dp"
+               android:layout_gravity="center"
+               android:layout_marginLeft="10dp"
+               android:src="@drawable/ic_eventssss"
+
+
+               />
+
+           <TextView
+
+               android:layout_width="match_parent"
+               android:layout_height="40dp"
+               android:layout_weight="1"
+               android:text="Events"
+               android:id="@+id/events_detailes_app"
+               android:layout_marginLeft="10dp"
+               android:textSize="30dp"
+               />
+       </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="40dp"
+           android:orientation="horizontal"
+           android:layout_marginTop="20dp"
+
+
+
+           >
+
+           <ImageView
+               android:layout_width="wrap_content"
+               android:layout_height="30dp"
+               android:layout_gravity="center"
+               android:layout_marginLeft="10dp"
+               android:src="@drawable/ic_history"
+
+
+               />
+
+           <TextView
+
+               android:layout_width="match_parent"
+               android:layout_height="40dp"
+               android:layout_weight="1"
+               android:text="History of User"
+               android:id="@+id/history_user_of_app"
+               android:layout_marginLeft="10dp"
+               android:textSize="30dp"
+               />
+       </LinearLayout>
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="40dp"
+           android:orientation="horizontal"
+           android:layout_marginTop="20dp"
+
+
+           >
+
+           <ImageView
+               android:layout_width="wrap_content"
+               android:layout_height="30dp"
+               android:layout_gravity="center"
+               android:layout_marginLeft="10dp"
+               android:src="@drawable/ic_share"
+
+
+               />
+
+           <TextView
+
+               android:layout_width="match_parent"
+               android:layout_height="40dp"
+               android:layout_weight="1"
+               android:layout_marginLeft="10dp"
+               android:id="@+id/share_app"
+               android:text="Share as"
+               android:textSize="30dp" />
+       </LinearLayout>
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="40dp"
+           android:orientation="horizontal"
+           android:layout_marginTop="20dp"
+
+
+           >
+
+           <ImageView
+               android:layout_width="wrap_content"
+               android:layout_height="30dp"
+               android:layout_gravity="center"
+               android:layout_marginLeft="10dp"
+               android:src="@drawable/ic_rating"
+
+
+               />
+
+           <TextView
+
+               android:layout_width="match_parent"
+               android:layout_height="40dp"
+               android:layout_weight="1"
+               android:text="Rate as"
+               android:id="@+id/rate_us"
+               android:layout_marginLeft="10dp"
+               android:textSize="30dp" />
+       </LinearLayout>
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="40dp"
+           android:orientation="horizontal"
+           android:layout_marginTop="20dp"
+
+
+
+           >
+
+           <ImageView
+               android:layout_width="wrap_content"
+               android:layout_height="30dp"
+               android:layout_gravity="center"
+               android:layout_marginLeft="10dp"
+               android:src="@drawable/ic_feedbackess"
+
+
+               />
+
+           <TextView
+
+               android:layout_width="match_parent"
+               android:layout_height="40dp"
+               android:layout_weight="1"
+               android:text="Feedback"
+               android:id="@+id/feedback_app"
+               android:layout_marginLeft="10dp"
+               android:textSize="30dp"
+               />
+       </LinearLayout>
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="40dp"
+           android:orientation="horizontal"
+           android:layout_marginTop="20dp"
+
+
+           >
+
+           <ImageView
+               android:layout_width="wrap_content"
+               android:layout_height="30dp"
+               android:layout_gravity="center"
+               android:layout_marginLeft="10dp"
+               android:src="@drawable/ic_logout"
+
+
+               />
+
+           <TextView
+               android:id="@+id/sign_out"
+               android:layout_width="match_parent"
+               android:layout_height="40dp"
+               android:layout_weight="1"
+               android:text="Sign out"
+               android:layout_marginLeft="10dp"
+               android:textSize="30dp" />
+       </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+   </LinearLayout>
 
 </FrameLayout>

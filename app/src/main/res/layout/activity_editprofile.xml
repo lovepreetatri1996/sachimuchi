@@ -2,55 +2,48 @@
 <LinearLayout android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-
     xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:id="@+id/upper"
+
+        xmlns:android="http://schemas.android.com/apk/res/android">
 
 
-<LinearLayout android:layout_width="match_parent"
-    android:layout_height="110dp"
-    android:orientation="horizontal"
-    android:layout_marginTop="10dp"
-    android:id="@+id/upper"
-    android:weightSum="2"
-    xmlns:android="http://schemas.android.com/apk/res/android">
 
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center"
-        android:layout_weight="1">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Register:"
-            android:textSize="30dp"
-
-            />
-    </LinearLayout>
-
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:gravity="center"
-        >
-
-            />
-
-        <de.hdodenhof.circleimageview.CircleImageView
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:id="@+id/imageviewc"
-            android:onClick="takeImageFromCamera"
-            android:src="@drawable/boytwo"
-            android:scaleType="centerCrop"
-            />
+
+            android:gravity="center"
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_back_arrow"
+                android:layout_gravity="top"
+                android:onClick="backes"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/imageviewc"
+                android:onClick="takeImageFromCamera"
+                android:src="@drawable/boytwo"
+                android:scaleType="centerCrop"
+                />
+        </LinearLayout>
+        </LinearLayout>
+
+
     </LinearLayout>
-
-
-</LinearLayout>
 
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
@@ -104,8 +97,6 @@
                     </LinearLayout>
 
 
-
-
                 </LinearLayout>
 
 
@@ -123,8 +114,7 @@
                     android:layout_marginTop="5dp"
                     android:background="@drawable/rounded"
                     android:inputType="number"
-                    android:paddingLeft="5dp"
-                    android:maxLength="10"/>
+                    android:paddingLeft="5dp" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -141,7 +131,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="10dp"
-                            android:text="Date of Birth"
+                            android:text="Date of Brith"
 
                             android:textSize="15dp" />
 
@@ -155,7 +145,6 @@
                                 android:layout_width="150dp"
                                 android:layout_height="30dp"
                                 android:layout_marginTop="5dp"
-                                android:focusableInTouchMode="false"
 
                                 android:background="@drawable/rounded"
 
@@ -197,17 +186,7 @@
                     android:background="@drawable/rounded"
                     android:inputType="textEmailAddress"
                     android:paddingLeft="5dp" />
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal"
-                    android:weightSum="6">
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="vertical"
-                        android:layout_weight="1"
-                       >
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -217,37 +196,12 @@
 
                 <EditText
                     android:id="@+id/password"
-                    android:layout_width="280dp"
+                    android:layout_width="match_parent"
                     android:layout_height="30dp"
                     android:layout_marginTop="5dp"
                     android:background="@drawable/rounded"
-                    android:imeOptions="actionNext"
-                    android:maxLines="1"
                     android:inputType="textPassword"
-                    android:singleLine="true"
                     android:paddingLeft="5dp" />
-                    </LinearLayout>
-                    <LinearLayout
-
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-
-                        android:orientation="vertical">
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_marginTop="5dp"
-                        android:id="@+id/show_password"
-
-                        android:gravity="center_vertical"
-
-                        android:text="Show"
-
-                        />
-                    </LinearLayout>
-
-                </LinearLayout>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -258,13 +212,12 @@
 
                 <EditText
                     android:id="@+id/confirmpassword"
-                    android:layout_width="280dp"
+                    android:layout_width="match_parent"
                     android:layout_height="30dp"
                     android:layout_marginTop="5dp"
                     android:background="@drawable/rounded"
                     android:inputType="textPassword"
                     android:paddingLeft="5dp" />
-
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -400,10 +353,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="15dp"
-                    android:onClick="register"
-                    android:id="@+id/register"
-                    android:text="Register"
-                    />
+                    android:onClick="save"
+                    android:text="UPDATE" />
 
 
             </LinearLayout>

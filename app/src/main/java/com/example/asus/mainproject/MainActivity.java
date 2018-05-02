@@ -10,6 +10,8 @@ import android.widget.ImageView;
 
 import com.google.firebase.auth.FirebaseAuth;
 
+import hotchemi.android.rate.AppRate;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -47,6 +49,6 @@ public class MainActivity extends AppCompatActivity {
 
             }
         };
-        h.postDelayed(r, 7000);
+        h.postDelayed(r, 4000);
     }
 }

@@ -3,6 +3,11 @@
     package="com.example.asus.mainproject">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -19,10 +24,20 @@
             </intent-filter>
         </activity>
         <activity android:name=".FirstPage" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCEPcGopu9UOIXHDvwPfpGTZ1Nj9ASCeqo" />
+
         <activity android:name=".SignUP" />
         <activity android:name=".Feedback" />
         <activity android:name=".Homes" />
-        <activity android:name=".Chatting"></activity>
+        <activity android:name=".Chatting" />
+        <activity android:name=".editprofile" />
+        <activity android:name=".Events_Detailes" />
+        <activity android:name=".PlacePickActivity" />
+        <activity android:name=".EditEventInfo" />
+        <activity android:name=".SingleCellEdit"></activity>
     </application>
 
 </manifest>
